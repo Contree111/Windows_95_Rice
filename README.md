@@ -13,4 +13,4 @@ Components:
 - Clock Widget: conky
 - Font: DepartureMono Nerd Font
 
-The Chrome/Firefox visual style is based on osem598's Firefox-98 project. I made a minor customization by appending a script at the end of the userChrome.css file to modify the font.
+The Chrome/Firefox style is based on osem598's Firefox-98 project. I made a small adjustment by adding a script at the end to the userChrome.css file to change the font.
