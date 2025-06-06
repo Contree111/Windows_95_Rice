@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:DepartureMono Nerd Font 10
+font pango:DepartureMono Nerd Font 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -114,16 +114,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Home"
-set $ws2 "2: Browser"
-set $ws3 "3: Terminal"
-set $ws4 "4: Main"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
 set $ws7 "7:"
 set $ws8 "8:"
-set $ws9 "9: Spotify"
-set $ws10 "10:"
+set $ws9 "9:"
+set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -150,7 +150,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
-assign [class="Spotify"] $ws9
+assign [class="Spotify"] $ws10
 #assign [class="zen"] $ws2
 #assign [class="Godot"] $ws4
 
@@ -218,16 +218,14 @@ bar {
 	mode invisible
 }
 
-
-
-# Sreen brightness controls
+# Screen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 2
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 2
 
-
 exec --no-startup-id i3-msg 'workspace $ws3; exec terminator'
+exec_always feh --bg-fill ~/.config/wallpapers/loading.png 
+exec_always --no-startup-id ~/.config/i3/animated_wallpaper.sh
 
-exec_always feh --bg-tile /home/jesse/Pictures/Rice_4/retroblue.jpg
 #exec_always feh --bg-fill #1D3F48
 exec --no-startup-id i3-msg 'workspace $ws2; exec librewolf'
 bindsym $mod+b exec --no-startup-id librewolf
@@ -237,9 +235,8 @@ exec spotify
 
 gaps inner 10
 gaps outer 10
-gaps top 40
+gaps top 45
 smart_gaps off
-
 
 default_border normal 5
 #default_floating_border pixel 2
@@ -254,4 +251,3 @@ exec_always picom --experimental-backend
 exec --no-startup-id i3-msg 'workspace $ws1'
 
 exec --no-startup-id autotiling
-
