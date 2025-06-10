@@ -12,7 +12,7 @@ Components:
 - Status Bar: polybar
 - Clock Widget: conky
 - Font: DepartureMono Nerd Font
-- Animated Wallpaper: xwinwrap
+- Animated Wallpaper: mmhobi7/xwinwrap
 
 The Chrome/Firefox style is based on osem598's Firefox-98 project. I made a small adjustment by adding a script at the end to the userChrome.css file to change the font.
 
