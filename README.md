@@ -10,7 +10,6 @@ Components:
 - Web Browser Styling: osem598/Firefox-98
 - Terminal Emulator: Terminator
 - Status Bar: polybar
-- Clock Widget: conky
 - Font: DepartureMono Nerd Font
 - Animated Wallpaper: mmhobi7/xwinwrap
 
