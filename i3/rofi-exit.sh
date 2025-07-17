@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Use Rofi to show the menu
-chosen=$(echo -e "Logout\nReboot\nShutdown\nCancel" | rofi -dmenu -i -p "Exit Menu")
+chosen=$(echo -e "Logout\nReboot\nShutdown\nCancel" | rofi -dmenu -i -p "Exit Menu" -normal-window)
 
 case "$chosen" in
     Logout)
