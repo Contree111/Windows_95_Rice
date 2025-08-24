@@ -1,8 +1,9 @@
 [global_config]
+  always_split_with_profile = True
 [keybindings]
 [profiles]
   [[default]]
-    font = DepartureMono Nerd Font Mono Bold Italic 10
+    font = DepartureMono Nerd Font Propo 11
     foreground_color = "#ffffff"
     show_titlebar = False
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
@@ -16,6 +17,12 @@
     scrollbar_position = hidden
     palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
     use_system_font = False
+  [[Retro]]
+    font = DepartureMono Nerd Font 11
+    foreground_color = "#00ff00"
+    show_titlebar = False
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0049ff:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[window0]]]
@@ -24,5 +31,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = default
+      profile = Retro
 [plugins]
