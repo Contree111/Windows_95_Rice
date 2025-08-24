@@ -20,4 +20,3 @@ case "$chosen" in
         exit 1
         ;;
 esac
-
